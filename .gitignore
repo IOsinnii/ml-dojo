@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Rendered previews
+SETUP.html
+SETUP_files/
+
+# Only track the dataset the notebooks use; everything else in data/ is private/other projects
+/data/*
+!/data/biomarker-analyses/
+/data/biomarker-analyses/*
+!/data/biomarker-analyses/elisa_biomarker_analysis_qmd/
+/data/biomarker-analyses/elisa_biomarker_analysis_qmd/*
+!/data/biomarker-analyses/elisa_biomarker_analysis_qmd/data/
+/data/biomarker-analyses/elisa_biomarker_analysis_qmd/data/*
+!/data/biomarker-analyses/elisa_biomarker_analysis_qmd/data/elisa_biomarker_data.csv
+!/data/biomarker-analyses/elisa_biomarker_analysis_qmd/data/cytokine_metadata.csv

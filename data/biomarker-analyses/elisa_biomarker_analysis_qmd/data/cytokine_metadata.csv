@@ -1,0 +1,22 @@
+"variable","description","unit"
+"patient_id","Patient identifier",NA
+"ra_status","Rheumatoid arthritis status (1 = RA, 0 = healthy control)",NA
+"age","Age in years","years"
+"gender","Gender (F = female, M = male)",NA
+"bmi","Body mass index (kg/m²)","kg/m²"
+"smoking","Smoking status (1 = current smoker, 0 = non-smoker)",NA
+"disease_duration","Disease duration in years (0 for healthy controls)","years"
+"rf_positive","Rheumatoid factor status (1 = positive, 0 = negative)",NA
+"anti_ccp_positive","Anti-cyclic citrullinated peptide antibody status (1 = positive, 0 = negative)",NA
+"crp_mg_l","C-reactive protein level (mg/L)","mg/L"
+"esr_mm_h","Erythrocyte sedimentation rate (mm/h)","mm/h"
+"TNF-alpha","Tumor Necrosis Factor alpha - Pro-inflammatory cytokine involved in systemic inflammation","pg/mL"
+"IL-1beta","Interleukin 1 beta - Mediator of inflammatory response and involved in cell proliferation, differentiation, and apoptosis","pg/mL"
+"IL-6","Interleukin 6 - Functions in inflammation and maturation of B cells, primarily pro-inflammatory in RA","pg/mL"
+"IL-8","Interleukin 8 - Chemokine involved in neutrophil recruitment and angiogenesis","pg/mL"
+"IL-10","Interleukin 10 - Anti-inflammatory cytokine that inhibits production of pro-inflammatory cytokines","pg/mL"
+"IL-17A","Interleukin 17A - Pro-inflammatory cytokine produced by Th17 cells, promotes synovial inflammation","pg/mL"
+"IL-18","Interleukin 18 - Pro-inflammatory cytokine that induces IFN-gamma production","pg/mL"
+"IFN-gamma","Interferon gamma - Activates macrophages, important in innate and adaptive immunity","pg/mL"
+"MCP-1","Monocyte Chemoattractant Protein 1 - Recruits monocytes, memory T cells, and dendritic cells to sites of inflammation","pg/mL"
+"VEGF","Vascular Endothelial Growth Factor - Stimulates angiogenesis and vasculogenesis","pg/mL"
