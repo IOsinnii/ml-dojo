@@ -16,3 +16,6 @@ SETUP_files/
 /data/biomarker-analyses/elisa_biomarker_analysis_qmd/data/*
 !/data/biomarker-analyses/elisa_biomarker_analysis_qmd/data/elisa_biomarker_data.csv
 !/data/biomarker-analyses/elisa_biomarker_analysis_qmd/data/cytokine_metadata.csv
+
+# Editor/assistant state
+.posit/

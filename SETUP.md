@@ -130,14 +130,14 @@ Positron notebooks work out of the box. `ipykernel` is already in the project, s
 
 1. **Open the folder:** use *File → Open Folder…* and choose `ml-dojo`. Open the whole folder, not just a single notebook, so Positron finds `.venv`.
 2. **Select the interpreter:** use the interpreter picker at the top right of the window and choose the Python under **`ml-dojo\.venv`** (labelled *uv* or *Venv*). If it isn't listed, run `uv sync` first, then reload the window.
-3. **Open the notebook:** open `notebooks/day1_fundamentals_linear_regression.ipynb`. It opens in the Positron Notebook Editor by default. If the kernel shown for the notebook isn't the `.venv` Python, switch it with the kernel selector.
+3. **Open the notebook:** open `primer/day1_fundamentals_linear_regression.ipynb`. It opens in the Positron Notebook Editor by default. If the kernel shown for the notebook isn't the `.venv` Python, switch it with the kernel selector.
 4. **Run it:** run cells one at a time with `Shift+Enter`, or use *Run All*.
 5. **Use the IDE panes:**
    - **Variables pane:** after the loading cell, `df` and `d` appear here.
    - **Data Explorer:** click a DataFrame in Variables to sort and filter the cohort and see column summaries.
    - **Help pane:** put the cursor on a function such as `train_test_split` to read its documentation.
 
-> **Tip:** the notebooks load data with paths relative to the `notebooks/` folder (`../data/...`). Keep the folder layout as is.
+> **Tip:** the notebooks load data with paths relative to the `primer/` folder (`../data/...`). Keep the folder layout as is.
 
 ### If something goes wrong
 
@@ -146,7 +146,7 @@ Positron notebooks work out of the box. `ipykernel` is already in the project, s
 | `ModuleNotFoundError: sklearn` | The wrong interpreter is selected. Pick the `.venv` Python. |
 | `.venv` doesn't appear in the picker | Run `uv sync` in the project folder, then use *Developer: Reload Window*. |
 | You added a package but the notebook doesn't see it | Restart the kernel after `uv add`. |
-| `FileNotFoundError` for the CSV | Make sure the notebook is still inside `notebooks/`. |
+| `FileNotFoundError` for the CSV | Make sure the notebook is still inside `primer/`. |
 
 ### Run without Positron (optional)
 

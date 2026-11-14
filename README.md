@@ -4,12 +4,22 @@ A self-study attempt to **predict the contents of an upcoming introductory machi
 
 The course itself may turn out differently. This repo is my own guess at the ground it will cover, and practice for it.
 
-## Notebooks
+## Layout
+
+```
+ml-dojo/
+├── pyproject.toml, uv.lock   one shared environment for everything
+├── primer/                   my own notebooks (Day 1, 2, …)
+├── workshop_2026/            additional workshop material and extensions
+└── data/                     shared data (only the simulated ELISA set is tracked)
+```
+
+## Notebooks (`primer/`)
 
 | # | Notebook | Topics |
 |---|---|---|
-| 1 | [Fundamentals + linear regression](notebooks/day1_fundamentals_linear_regression.ipynb) | ML vocabulary, least squares by hand, confounding, train/test split, overfitting, the p ≫ n problem |
-| 2 | [Logistic regression + gradient descent](notebooks/day2_logistic_regression_gradient_descent.ipynb) | odds ratios, log-loss, gradient descent from scratch, sensitivity/specificity, ROC/PR, calibration, target leakage |
+| 1 | [Fundamentals + linear regression](primer/day1_fundamentals_linear_regression.ipynb) | ML vocabulary, least squares by hand, confounding, train/test split, overfitting, the p ≫ n problem |
+| 2 | [Logistic regression + gradient descent](primer/day2_logistic_regression_gradient_descent.ipynb) | odds ratios, log-loss, gradient descent from scratch, sensitivity/specificity, ROC/PR, calibration, target leakage |
 
 More notebooks will follow.
 
