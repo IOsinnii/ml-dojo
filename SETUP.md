@@ -153,3 +153,9 @@ Positron notebooks work out of the box. `ipykernel` is already in the project, s
 ```bash
 uv run jupyter lab
 ```
+
+### Interpreter not discovered in Positron
+
+- Open the **`ml-dojo` root folder** (not a subfolder or the old `ml-primer`). The repo's `.vscode/settings.json` points Positron at `.venv` automatically.
+- The environment must be built on a **uv-managed Python**, not the Microsoft Store one (Positron often skips Store-based venvs). `pyproject.toml` enforces this with `python-preference = "only-managed"`; if in doubt, run `uv python install 3.13` then `rm -rf .venv && uv sync`.
+- Reload the window (*Developer: Reload Window*), then pick the interpreter under `ml-dojo\.venv`. If it still isn't listed, use *Enter interpreter path…* and choose `.venv\Scripts\python.exe`.
