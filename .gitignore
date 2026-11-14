@@ -19,3 +19,8 @@ SETUP_files/
 
 # Editor/assistant state
 .posit/
+
+# Published aging proteomics table used by primer/day3
+!/data/biomarker-analyses/legacy code/
+/data/biomarker-analyses/legacy code/*
+!/data/biomarker-analyses/legacy code/31642809_Age_Old_Young.csv
