@@ -1,3 +1,4 @@
+setwd(here::here("workshop_2026", "ml_logistic_regression_code"))  # works from any working directory; needs install.packages("here")
 ## NOTE: The data used in this demo comes from the UCI machine learning
 ## repository.
 ## http://archive.ics.uci.edu/ml/index.php

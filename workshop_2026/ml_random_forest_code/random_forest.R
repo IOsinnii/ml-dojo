@@ -1,3 +1,4 @@
+setwd(here::here("workshop_2026", "ml_random_forest_code"))  # works from any working directory; needs install.packages("here")
 library(randomForest)
 
 ## NOTE: The data used in this demo comes from the UCI machine learning

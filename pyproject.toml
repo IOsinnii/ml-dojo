@@ -12,6 +12,8 @@ dependencies = [
     "seaborn>=0.13.2",
     "statsmodels>=0.15.0",
     "ipykernel",
+    "polars>=2.1.0",
+    "pyarrow>=26.0.1",
 ]
 
 [dependency-groups]

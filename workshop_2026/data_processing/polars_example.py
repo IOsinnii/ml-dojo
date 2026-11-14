@@ -1,11 +1,11 @@
 import datetime
 
 import polars as pl
+from pathlib import Path
+HERE = Path(__file__).resolve().parent  # script folder, so paths work from any working directory
 
-path = "~/My Drive/stat_quests/course_intro_to_ml_2026/00_guides/code_and_stuff/"
-
-polars_df = pl.read_csv(path + "example_data.txt", separator="\t")
-# polars_df = pl.read_csv(path + "example_data.txt", 
+polars_df = pl.read_csv(HERE / "example_data.txt", separator="\t")
+# polars_df = pl.read_csv(HERE / "example_data.txt", 
 #                         separator="\t",
 #                         has_header=False)
 # print out first 5 rows

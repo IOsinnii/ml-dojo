@@ -4,6 +4,8 @@ import pandas as pd
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from scipy.stats import chi2
+from pathlib import Path
+HERE = Path(__file__).resolve().parent  # script folder, so paths work from any working directory
 
 ## NOTE: The data used in this demo comes from the UCI machine learning
 ## repository.
@@ -11,8 +13,8 @@ from scipy.stats import chi2
 ## Specifically, this is the heart disease data set.
 ## http://archive.ics.uci.edu/ml/datasets/Heart+Disease
 
-df = pd.read_csv("processed_cleveland_data.csv", header=None)
-# df = pd.read_csv("processed_cleveland_data.csv", header=None, na_values="?")
+df = pd.read_csv(HERE / "processed_cleveland_data.csv", header=None)
+# df = pd.read_csv(HERE / "processed_cleveland_data.csv", header=None, na_values="?")
 
 #####################################
 ##
@@ -247,7 +249,7 @@ def draw_sex_plot():
 
 
 fig = draw_sex_plot()
-fig.savefig("single_variable_logistic_py.pdf", transparent=True)
+fig.savefig(HERE / "single_variable_logistic_py.pdf", transparent=True)
 plt.show()
 
 ## Since there are only two probabilities (one for females and one for males),
@@ -324,7 +326,7 @@ def draw_probability_plot():
 
 
 fig = draw_probability_plot()
-fig.savefig("full_model_logistic_py.pdf", transparent=True)
+fig.savefig(HERE / "full_model_logistic_py.pdf", transparent=True)
 plt.show()
 
 #####################################

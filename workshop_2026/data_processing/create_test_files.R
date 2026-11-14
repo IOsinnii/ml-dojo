@@ -1,6 +1,4 @@
-setwd(
-"c:/Users/osenn/Documents/Github/machine_learning_workshop_2026-main/machine_learning_workshop_2026/data_processing"
-)
+setwd(here::here("workshop_2026", "data_processing"))  # works from any working directory; needs install.packages("here")
 
 set.seed(42)
 num.rows <- 100

@@ -1,3 +1,4 @@
+setwd(here::here("workshop_2026", "ml_metrics_and_evaluation_code"))  # works from any working directory; needs install.packages("here")
 library(pROC) # install with install.packages("pROC")
 library(randomForest) # install with install.packages("randomForest")
 

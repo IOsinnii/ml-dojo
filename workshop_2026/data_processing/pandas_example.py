@@ -2,11 +2,11 @@ import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from pathlib import Path
+HERE = Path(__file__).resolve().parent  # script folder, so paths work from any working directory
 
-path = "~/My Drive/stat_quests/course_intro_to_ml_2026/00_guides/code_and_stuff/"
-
-pandas_df = pd.read_csv(path + "example_data.txt", sep="\t")
-# pandas_df = pd.read_csv(path + "example_data.txt", sep="\t", header=None)
+pandas_df = pd.read_csv(HERE / "example_data.txt", sep="\t")
+# pandas_df = pd.read_csv(HERE / "example_data.txt", sep="\t", header=None)
 
 # print out the first 5 rows
 pandas_df.head()

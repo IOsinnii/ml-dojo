@@ -25,8 +25,10 @@ from sklearn.preprocessing import OneHotEncoder  # one-hot encode categorical pr
 from sklearn.pipeline import Pipeline  # chain preprocessing + model together
 from sklearn.tree import DecisionTreeClassifier  # the classification tree model
 from sklearn.metrics import ConfusionMatrixDisplay, accuracy_score  # evaluation
+from pathlib import Path
+HERE = Path(__file__).resolve().parent  # script folder, so paths work from any working directory
 
-df = pd.read_csv("concepts_and_code_decision_trees/booking.csv")  # read the CSV file into a DataFrame
+df = pd.read_csv(HERE / "booking.csv")  # read the CSV file into a DataFrame
 
 df = df.drop(columns=["Booking_ID", "date of reservation"])  # drop row ID and raw date string (not usable predictors as-is)
 

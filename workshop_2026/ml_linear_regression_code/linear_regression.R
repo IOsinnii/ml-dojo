@@ -1,3 +1,4 @@
+setwd(here::here("workshop_2026", "ml_linear_regression_code"))  # works from any working directory; needs install.packages("here")
 # first read the data into a data frame
 df <- read.csv("Salary_dataset.csv")
 

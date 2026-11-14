@@ -1,6 +1,4 @@
-setwd(
-  "~/My Drive/stat_quests/course_intro_to_ml_2026/00_guides/code_and_stuff/"
-)
+setwd(here::here("workshop_2026", "data_processing"))  # works from any working directory; needs install.packages("here")
 
 base_df <- read.delim("example_data.txt")
 # base_df <- read.delim("example_data.txt", header = FALSE)

@@ -1,9 +1,7 @@
 library(tidyverse) # readr, dplyr, tibble, forcats, stringr, lubridate, ...
 
 # Set the working directory
-setwd(
-  "~/My Drive/stat_quests/course_intro_to_ml_2026/00_guides/data_processing/"
-)
+setwd(here::here("workshop_2026", "data_processing"))  # works from any working directory; needs install.packages("here")
 
 tidy_df <- read_delim("data.txt", delim = "\t")
 tidy_df |> head(n = 3)

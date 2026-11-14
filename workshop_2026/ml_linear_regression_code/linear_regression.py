@@ -2,9 +2,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 import statsmodels.formula.api as smf
+from pathlib import Path
+HERE = Path(__file__).resolve().parent  # script folder, so paths work from any working directory
 
 # first read the data into a data frame
-df = pd.read_csv("Salary_dataset.csv")
+df = pd.read_csv(HERE / "Salary_dataset.csv")
 
 # look at the first few rows
 print(df.head())
@@ -28,7 +30,7 @@ plt.show()
 
 # save a PDF of the graph with a transparent
 # background
-fig.savefig("salary_data_plot_python.pdf", transparent=True, bbox_inches="tight")
+fig.savefig(HERE / "salary_data_plot_python.pdf", transparent=True, bbox_inches="tight")
 
 # now do linear regression with the data
 model = smf.ols("Salary ~ YearsExperience", data=df).fit()
@@ -58,7 +60,7 @@ plt.show()
 
 # save a PDF of the graph with a transparent
 # background
-fig.savefig("linear_regression_python.pdf", transparent=True, bbox_inches="tight")
+fig.savefig(HERE / "linear_regression_python.pdf", transparent=True, bbox_inches="tight")
 
 # now summarize the range of YearsExperience
 # that are reasonable input values for

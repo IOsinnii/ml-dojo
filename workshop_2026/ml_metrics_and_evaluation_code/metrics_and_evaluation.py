@@ -9,6 +9,8 @@ from sklearn.metrics import (  # ROC, AUC, confusion matrix
     roc_auc_score,
     roc_curve,
 )
+from pathlib import Path
+HERE = Path(__file__).resolve().parent  # script folder, so paths work from any working directory
 
 #######################################
 ##
@@ -73,7 +75,7 @@ plt.xlabel("Blood Pressure")  # x-axis label
 plt.ylabel("Heart Disease")  # y-axis label
 plt.show()  # display the plot
 
-plt.savefig("logistic_regression_python.pdf", transparent=True)  # save with a transparent background
+plt.savefig(HERE / "logistic_regression_python.pdf", transparent=True)  # save with a transparent background
 
 #######################################
 ##
@@ -171,7 +173,7 @@ ax.text(50, 50, f"AUC: {logistic_auc:.1f}%")  # print the AUC on the plot
 plt.show()  # display the plot
 # save a 4x4 inch version of the ROC plot
 # fig.set_size_inches(4, 4)  # resize the figure
-# fig.savefig("logstic_roc_python.pdf", transparent=True)  # write the PDF
+# fig.savefig(HERE / "logstic_roc_python.pdf", transparent=True)  # write the PDF
 
 
 
@@ -258,7 +260,7 @@ plt.show()  # display the plot
 
 # save the layered plot as a 6x6 inch PDF
 fig.set_size_inches(6, 6)  # resize the figure
-fig.savefig("logistic_vs_forest_AUC_python.pdf", transparent=True)  # write the PDF
+fig.savefig(HERE / "logistic_vs_forest_AUC_python.pdf", transparent=True)  # write the PDF
 
 #######################################
 ##

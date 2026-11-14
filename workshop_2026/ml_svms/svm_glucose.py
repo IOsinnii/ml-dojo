@@ -7,10 +7,12 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
+from pathlib import Path
+HERE = Path(__file__).resolve().parent  # script folder, so paths work from any working directory
 
 # now we open the data file and print out the
 # first few lines...
-df = pd.read_csv("data_diabetes.csv")
+df = pd.read_csv(HERE / "data_diabetes.csv")
 df.head()
 
 # now plot both features and see how well
