@@ -1,5 +1,5 @@
 [project]
-name = "ml-primer"
+name = "ml-dojo"
 version = "0.1.0"
 description = "Machine learning primer for bioinformatics and clinical systems biology"
 requires-python = ">=3.12"

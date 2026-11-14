@@ -46,7 +46,7 @@ uv --version
 
 ## 3. Set up this course
 
-From the `ml-primer` folder:
+From the `ml-dojo` folder:
 
 ```bash
 uv sync
@@ -102,7 +102,7 @@ uvx ruff check .
 
 ```toml
 [project]
-name = "ml-primer"
+name = "ml-dojo"
 requires-python = ">=3.12"
 dependencies = [          # needed to run the course
     "numpy", "pandas", "scikit-learn", "statsmodels", "seaborn", "ipykernel",
@@ -128,8 +128,8 @@ package = false           # this is a project, not an installable library
 
 Positron notebooks work out of the box. `ipykernel` is already in the project, so Positron needs nothing extra.
 
-1. **Open the folder:** use *File → Open Folder…* and choose `ml-primer`. Open the whole folder, not just a single notebook, so Positron finds `.venv`.
-2. **Select the interpreter:** use the interpreter picker at the top right of the window and choose the Python under **`ml-primer\.venv`** (labelled *uv* or *Venv*). If it isn't listed, run `uv sync` first, then reload the window.
+1. **Open the folder:** use *File → Open Folder…* and choose `ml-dojo`. Open the whole folder, not just a single notebook, so Positron finds `.venv`.
+2. **Select the interpreter:** use the interpreter picker at the top right of the window and choose the Python under **`ml-dojo\.venv`** (labelled *uv* or *Venv*). If it isn't listed, run `uv sync` first, then reload the window.
 3. **Open the notebook:** open `notebooks/day1_fundamentals_linear_regression.ipynb`. It opens in the Positron Notebook Editor by default. If the kernel shown for the notebook isn't the `.venv` Python, switch it with the kernel selector.
 4. **Run it:** run cells one at a time with `Shift+Enter`, or use *Run All*.
 5. **Use the IDE panes:**

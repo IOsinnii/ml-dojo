@@ -1,4 +1,4 @@
-# ML Primer (Python)
+# ML Dojo
 
 A self-study attempt to **predict the contents of an upcoming introductory machine learning course** and to work through them ahead of time. The material is written from scratch as Jupyter notebooks. The examples are tailored to **bioinformatics and clinical systems biology**: biomarker panels, patient cohorts, and omics-style data where features far outnumber samples.
 
