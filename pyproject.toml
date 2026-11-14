@@ -25,3 +25,7 @@ dev = [
 [tool.uv]
 package = false
 python-preference = "only-managed"
+
+[tool.pyrefly]
+project-includes = ["primer", "workshop_2026"]
+project-excludes = ["**/.venv/**", "data/**", "**/*.ipynb_checkpoints/**", "workshop_2026/ml_linear_regression_code/linear_regression_r.ipynb", "workshop_2026/ml_random_forest_code/random_forest.ipynb"]
